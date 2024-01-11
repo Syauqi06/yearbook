@@ -32,8 +32,7 @@ class AkunController extends Controller
         ];
 
         if (Auth::attempt($credentials)) {
-            return redirect('dashboard')->with('success', 'Berhasil Login');
-            echo "berhasil login";
+            return redirect('cover')->with('success', 'Berhasil Login');
         }else {
             return redirect()->back()->withErrors('The username and password entered are incorrect');
         }
