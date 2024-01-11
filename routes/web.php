@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AkunController;
+use App\Http\Controllers\CoverController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [AkunController::class, 'index']);
 Route::post('login', [AkunController::class, 'login']);
+Route::get('cover', [CoverController::class, 'index']);
